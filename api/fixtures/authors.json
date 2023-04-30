@@ -1,0 +1,57 @@
+[
+  {
+    "model": "api.author",
+    "pk": 1,
+    "fields": {
+      "user": 2,
+      "first_name": "Абдусамад",
+      "second_name": "Дусабаев",
+      "date_of_birthday": "2001-08-17",
+      "api_token": "dd3287e6e9f3a6c384aa8a34a542d65e86643ce7"
+    }
+  },
+  {
+    "model": "api.author",
+    "pk": 2,
+    "fields": {
+      "user": 3,
+      "first_name": "Алина",
+      "second_name": "Соловьева",
+      "date_of_birthday": "2000-10-02",
+      "api_token": "c8c74a4c14b5b359201bbecec1f958c44dd5bd3c"
+    }
+  },
+  {
+    "model": "api.author",
+    "pk": 3,
+    "fields": {
+      "user": 4,
+      "first_name": "Азамат",
+      "second_name": "Дусабаев",
+      "date_of_birthday": "1999-07-10",
+      "api_token": "442d4b85ad2981cd2a537cefa69ee122147d7d6c"
+    }
+  },
+  {
+    "model": "api.author",
+    "pk": 4,
+    "fields": {
+      "user": 5,
+      "first_name": "Илья",
+      "second_name": "Соловьев",
+      "date_of_birthday": "2002-05-22",
+      "api_token": "0dd1eeae80d3eb74fadd568befc797e7f1fffcac"
+    }
+  },
+  {
+    "model": "api.author",
+    "pk": 5,
+    "fields": {
+      "user": 6,
+      "first_name": "Иван",
+      "second_name": "Кулинов",
+      "date_of_birthday": "1997-03-09",
+      "api_token": "4a9376975b0d50bd1b3e9ca9a8df885d55d8d706"
+    }
+  }
+]

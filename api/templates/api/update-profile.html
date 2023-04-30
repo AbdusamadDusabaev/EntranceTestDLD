@@ -1,0 +1,49 @@
+{% extends "api/base.html" %}
+
+{% block title %}
+    Обновление Профиля
+{% endblock %}
+
+{% block header-links %}
+    <div class="col-2 text-align-el"><a href="{% url 'api:documentation' %}">Документация API</a></div>
+{% endblock %}
+
+
+{% block body %}
+    <div class="row">
+        <div class="col-1"></div>
+        <div class="col-10">
+            <h1>Обновление данных</h1>
+            <form method="post">
+                {% for error_message in error_messages %}
+                    <p style="color: red;">{{ error_message }}</p>
+                {% endfor %}
+                {% csrf_token %}
+
+                {% if user.author.first_name %}
+                    <p>Имя: <input type="text" name="first_name" value="{{ user.author.first_name }}"></p>
+                {% else %}
+                    <p>Имя: <input type="text" name="first_name"></p>
+                {% endif %}
+
+                {% if user.author.second_name %}
+                    <p>Фамилия: <input type="text" name="second_name" value="{{ user.author.second_name }}"></p>
+                {% else %}
+                    <p>Фамилия: <input type="text" name="second_name"></p>
+                {% endif %}
+
+                {% if user.author.date_of_birthday %}
+                    <p>Дата рождения: <input type="date" name="date_of_birthday" value="{{ user.author.verbose_date_of_birthday }}"></p>
+                {% else %}
+                    <p>Дата рождения: <input type="date" name="date_of_birthday"></p>
+                {% endif %}
+                <button type="submit">Обновить</button>
+            </form>
+        </div>
+        <div class="col-1"></div>
+    </div>
+    <div class="row separator-row"></div>
+    <div class="row">
+        <p><a href="{% url 'api:profile' %}">Вернуться к профилю</a></p>
+    </div>
+{% endblock %}

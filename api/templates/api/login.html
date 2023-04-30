@@ -1,0 +1,20 @@
+{% extends "api/base.html" %}
+
+{% block title %}
+    Обновление Профиля
+{% endblock %}
+
+{% block header-links %}
+    <div class="col-2 text-align-el"><a href="{% url 'api:documentation' %}">Документация API</a></div>
+{% endblock %}
+
+
+{% block body %}
+    <div class="row">
+      <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Войти</button>
+      </form>
+    </div>
+{% endblock %}

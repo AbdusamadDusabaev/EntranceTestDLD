@@ -1,0 +1,81 @@
+a {
+    text-decoration: none;
+    text-transform: none;
+}
+
+body {
+    font-size: 20px;
+}
+
+.container {
+    margin: 0 auto;
+    margin-top: 10vh;
+    background-color: rgba(0,0,0,.3);
+    padding: 45px 25px;
+    border-radius: 40px;
+    border: 1px solid rgba(0,0,0,.5);
+}
+
+h1 {
+    margin-bottom: 30px;
+}
+
+.separator-row {
+    margin-bottom: 20px;
+}
+
+.header {
+    margin-bottom: 30px;
+    padding: 10px;
+}
+
+.registration-form {
+    width: 100%;
+    color: black;
+}
+
+.text-align-el {
+    text-align: center;s
+}
+
+.blue-text {
+    color: blue;
+}
+
+.white-text {
+    color: rgba(255, 255, 255,.85);
+}
+
+.code-block {
+    background-color: rgba(10,10,10,.8);
+}
+
+pre {
+    margin: 0;
+    padding: 0;
+    font-size: inherit;
+}
+
+code {
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: rgba(255, 255, 255,.7);
+    background-color: rgba(0,0,0,.5);
+    padding: 20px 20px;
+    font-size: inherit;
+}
+
+.large-code {
+    font-size: 12px;
+
+}
+
+.text-block {
+    padding: 20px 20px;
+    margin-bottom: 25px;
+}
+
+.method-el {
+    margin-bottom: 100px;
+}

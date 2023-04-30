@@ -1,0 +1,43 @@
+{% extends "api/base.html" %}
+
+{% block title %}
+Ваш профиль
+{% endblock %}
+
+{% block header-links %}
+    <div class="col-2 text-align-el"><a href="{% url 'api:documentation' %}">Документация API</a></div>
+{% endblock %}
+
+{% block body %}
+    <div class="row">
+        <div class="col-3"></div>
+        <div class="col-6" style="text-align: center;">
+            <h1>Ваш профиль</h1>
+        </div>
+        <div class="col-3"></div>
+    </div>
+    <div class="row">
+        <div class="col-6">
+            <div class="row">
+                <h2>Личная информация</h2>
+            </div>
+            <div class="row">
+                <p>Имя: {{ user.author.first_name }}</p>
+                <p>Фамилия: {{ user.author.second_name }}</p>
+                <p>Дата рождения: {{ user.author.date_of_birthday }}</p>
+                <p>API Токен: {{ user.author.api_token }}</p>
+            </div>
+            <div class="row">
+                <p><a href="{% url 'api:update-profile' %}">Обновить данные профиля</a></p>
+            </div>
+        </div>
+        <div class="col-6">
+            <div class="row">
+                <h2>Статистика</h2>
+            </div>
+            <div class="row">
+                <p>Опубликовано книг: {{ user.author.books.all|length }}</p>
+            </div>
+        </div>
+    </div>
+{% endblock %}
